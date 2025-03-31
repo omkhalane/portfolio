@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <section id="todo">
+        <h2>To-Do List</h2>
+        <input type="text" id="todo-input" placeholder="New task">
+        <button onclick="addTask()">Add</button>
+        <ul id="todo-list"></ul>
+    </section>
+
+    <section id="apps">
+        <h2>App Shortcuts</h2>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://leetcode.com" target="_blank">LeetCode</a>
+    </section>
+
+    <section id="projects">
+        <h2>Ongoing Projects</h2>
+        <ul>
+            <li>Project A</li>
+            <li>Project B</li>
+        </ul>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="assets/resume.pdf" download>Download Resume</a>
+    </section>
+
+    <section id="storage">
+        <h2>Storage</h2>
+        <input type="file" id="file-upload">
+        <p id="uploaded-file"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
